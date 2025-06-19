@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currículo de Leandro Souza</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Tailwind CSS configuration for custom colors
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            // Define SF Pro as the default sans-serif font
+            // Using a fallback to system-ui, -apple-system, etc. for broader compatibility
+            sans: ['SF Pro Display', 'SF Pro Text', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'],
+          },
+          colors: {
+            'apple-gray': '#F5F5F7', // Light gray for backgrounds
+            'apple-dark-gray': '#1D1D1F', // Dark gray for text
+            'apple-blue': '#007AFF', // Blue for links/accents
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom styles to refine the Apple aesthetic */
+    body {
+      /* Prioritize SF Pro Display/Text, with fallbacks for non-Apple systems */
+      font-family: 'SF Pro Display', 'SF Pro Text', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'Noto Sans', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      color: #1D1D1F;
+      /* Apple's dark text color */
+    }
+
+    /* Standardized font sizes for main titles */
+    .section-title {
+      font-size: 2.25rem;
+      /* 36px - text-4xl */
+      font-weight: 700;
+      /* Bold */
+      margin-bottom: 2rem;
+      color: #1D1D1F;
+    }
+
+    @media (min-width: 640px) {
+
+      /* sm breakpoint */
+      .section-title {
+        font-size: 3rem;
+        /* 48px - sm:text-5xl */
+      }
+    }
+
+    /* Standardized font sizes for subsections */
+    .subsection-title {
+      font-size: 1.5rem;
+      /* 24px - text-2xl */
+      font-weight: 600;
+      /* Semi-bold */
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      color: #1D1D1F;
+    }
+
+    @media (min-width: 640px) {
+
+      /* sm breakpoint */
+      .subsection-title {
+        font-size: 1.875rem;
+        /* 30px - sm:text-3xl */
+      }
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      /* Subtle shadow */
+      padding: 2.5rem;
+      /* Generous padding */
+      margin-bottom: 2rem;
+    }
+
+    .apple-link {
+      color: #0077EE;
+      /* Apple's signature blue for links */
+      text-decoration: none;
+      transition: opacity 0.3s ease;
+    }
+
+    .apple-link:hover {
+      opacity: 0.7;
+    }
+
+    /* Smooth scroll for navigation */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-apple-gray text-apple-dark-gray leading-relaxed">
+
+  <!-- Header Section -->
+  <header class="bg-white py-8 shadow-sm">
+    <div class="container mx-auto px-6 max-w-4xl text-center">
+      <!-- Increased main title size for better impact -->
+      <h1 class="text-5xl sm:text-6xl font-bold mb-2">Leandro Souza</h1>
+      <!-- Standardized description text size -->
+      <p class="text-xl sm:text-2xl font-medium text-gray-600">Analista Administrativo - CEPHO | Bacharel em Sistemas de Informação</p>
+      <p class="text-xl sm:text-2xl font-medium text-gray-600">Experiência em Administração e Finanças | Cursando Pós-graduação Lato Sensu em Pesquisa Clínica</p>
+      <!-- Location text size standardized -->
+      <p class="text-lg mt-4 text-gray-500">São Paulo, Brasil</p>
+    </div>
+  </header>
+
+  <!-- Navigation (Optional, but good for Apple-like experience) -->
+  <nav class="sticky top-0 bg-white shadow-md z-10 py-3">
+    <ul class="container mx-auto px-6 max-w-4xl flex justify-center space-x-6 text-lg sm:text-xl font-medium">
+      <li><a href="#resumo" class="apple-link">Resumo</a></li>
+      <li><a href="#experiencia" class="apple-link">Experiência</a></li>
+      <li><a href="#formacao" class="apple-link">Formação</a></li>
+      <li><a href="#certificacoes" class="apple-link">Certificações</a></li>
+      <li><a href="#contato" class="apple-link">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main class="container mx-auto px-6 py-12 max-w-4xl">
+
+    <!-- Resumo Section -->
+    <section id="resumo" class="card">
+      <h2 class="section-title">Resumo</h2>
+      <!-- Standardized body text size -->
+      <p class="text-lg">
+        Analista administrativo com sólida experiência em gestão financeira e suporte à pesquisa clínica, combinando conhecimentos multidisciplinares em administração, tecnologia e saúde. Certificado em Boas Práticas Clínicas, gestão de dados e metodologias de pesquisa, com habilidades em organização, comunicação e resolução de problemas. Busco transicionar para cargos de coordenação em pesquisa clínica, aplicando minha expertise em gestão de projetos e conformidade regulatória.
+      </p>
+    </section>
+
+    <!-- Principais Competências Section -->
+    <section id="competencias" class="card">
+      <h2 class="section-title">Principais Competências</h2>
+      <!-- Standardized list item text size -->
+      <ul class="list-disc list-inside text-lg space-y-2">
+        <li>Controle operacional</li>
+        <li>Situações de emergência</li>
+        <li>Solicitação de proposta</li>
+      </ul>
+    </section>
+
+    <!-- Experiência Section -->
+    <section id="experiencia" class="card">
+      <h2 class="section-title">Experiência</h2>
+
+      <div class="mb-8">
+        <h3 class="subsection-title">CEPHO - Centro de Estudos e Pesquisas em Hematologia e Oncologia</h3>
+        <!-- Standardized text sizes for roles and dates -->
+        <p class="text-lg font-semibold">Analista Administrativo</p>
+        <p class="text-gray-600 text-base">dezembro de 2022 - Present (2 anos 7 meses)</p>
+        <p class="text-gray-600 text-base mb-4">São Paulo, Brasil</p>
+        <!-- Standardized list item text size -->
+        <ul class="list-disc list-inside text-base space-y-1">
+          <li><span class="font-semibold">Suporte Administrativo Geral:</span> Gestão de agendas e organização de reuniões (presenciais e online).</li>
+          <li>Elaboração e organização de materiais de reunião (atas, pautas, apresentações).</li>
+          <li>Gestão de arquivos físicos e digitais, garantindo organização e conformidade.</li>
+          <li>Criação e atualização de documentos e materiais de comunicação interna (organogramas, calendários, boletins informativos, etc.).</li>
+          <li>Suporte na gestão de instalações, fornecedores e outros recursos.</li>
+          <li><span class="font-semibold">Suporte Específico à Pesquisa Clínica:</span> Suporte administrativo na gestão de pesquisas clínicas.</li>
+          <li>Auxílio na elaboração de submissões de pacotes iniciais para pesquisas.</li>
+          <li>Análise de contratos de pesquisa e suporte na redação de alterações contratuais.</li>
+          <li>Gestão de documentação de pesquisa, garantindo conformidade com as diretrizes.</li>
+          <li>Divulgação e comunicação de pesquisas clínicas (website, mídia, etc.).</li>
+          <li><span class="font-semibold">Suporte à Equipe Médica e Ambulatorial:</span> Apoio direto à equipe médica, fornecendo informações e materiais de estudo.</li>
+          <li>Organização de eventos e treinamentos para a equipe médica.</li>
+          <li>Suporte administrativo ao ambulatório de oncologia.</li>
+          <li>Interface com a farmácia oncológica, facilitando a comunicação e os processos.</li>
+          <li><span class="font-semibold">Gestão de Equipe e Processos:</span> Acompanhamento de processos e fluxos de trabalho da equipe.</li>
+          <li>Criação de ferramentas e recursos para otimizar o trabalho da equipe.</li>
+          <li>Suporte nas atividades de coordenação do departamento.</li>
+          <li>Participação na integração de novos membros da equipe e em seus treinamentos.</li>
+          <li>Análise e resolução de problemas relacionados aos serviços de Hematologia e Oncologia.</li>
+        </ul>
+        <!-- Standardized points of strength text size -->
+        <h4 class="text-xl font-semibold mt-4">Pontos Fortes:</h4>
+        <ul class="list-disc list-inside text-base space-y-1">
+          <li>Multifuncionalidade e capacidade de lidar com diversas responsabilidades.</li>
+          <li>Domínio das ferramentas de organização e gestão administrativa.</li>
+          <li>Habilidades de comunicação escrita e oral.</li>
+          <li>Conhecimento da área da saúde, em especial de Hematologia e Oncologia.</li>
+          <li>Proatividade e capacidade de resolução de problemas.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="subsection-title">Car Dealer</h3>
+        <!-- Standardized text sizes for roles and dates -->
+        <p class="text-lg font-semibold">Executivo de Desenvolvimento de Negócios de Vendas</p>
+        <p class="text-gray-600 text-base">janeiro de 2006 - dezembro de 2022 (17 anos)</p>
+        <p class="text-gray-600 text-base mb-4">São Paulo, Brasil</p>
+        <!-- Standardized list item text size -->
+        <ul class="list-disc list-inside text-base space-y-1">
+          <li><span class="font-semibold">Habilidade de comunicação:</span> Comunicar-se com clareza, paixão e impacto, seja na forma escrita ou verbal, garante que você transmita ideias e informações de forma eficaz, criando conexões sólidas com os clientes.</li>
+          <li><span class="font-semibold">Gestão de leads:</span> Organização e gestão eficaz de leads, utilizando ferramentas e estratégias para otimizar o tempo e aumentar as chances de conversão.</li>
+          <li><span class="font-semibold">Elaboração de relatórios:</span> Acompanhamento constante dos resultados através de relatórios detalhados sobre as vendas realizadas, fechadas e canceladas.</li>
+          <li><span class="font-semibold">Gestão e Liderança:</span></li>
+          <ul class="list-circle list-inside ml-5 space-y-1">
+            <li>Definição de metas: Capacidade de definir metas de vendas desafiadoras e realistas, tanto individuais quanto para a equipe, impulsionando o alcance de resultados.</li>
+            <li>Gestão de equipe: Experiência em liderar e motivar equipes de vendas, criando um ambiente positivo e focado em resultados.</li>
+            <li>Planejamento estratégico: Participação na elaboração e implementação de estratégias de vendas eficazes para o atingimento das metas.</li>
+            <li>Gestão de relacionamento: Habilidade em construir e fortalecer o relacionamento com clientes, criando laços duradouros e oportunidades.</li>
+          </ul>
+          <li><span class="font-semibold">Expertise Técnica em Automóveis:</span></li>
+          <ul class="list-circle list-inside ml-5 space-y-1">
+            <li>Avaliação de veículos: Profundo conhecimento técnico para avaliar veículos novos e usados, identificando as condições da carroceria, pintura, mecânica, documentação e demais itens relevantes.</li>
+            <li>Elaboração de relatórios técnicos: Elaboração de relatórios completos sobre as condições dos veículos avaliados, incluindo a determinação do valor de mercado com base na tabela Fipe.</li>
+          </ul>
+          <li><span class="font-semibold">Administração e Finanças:</span></li>
+          <ul class="list-circle list-inside ml-5 space-y-1">
+            <li>Gestão financeira: Conhecimento em gestão e controle de contas correntes, conciliação bancária e rotinas contábeis básicas.</li>
+            <li>Previsão de tesouraria: Capacidade de realizar previsões de curto prazo do fluxo de caixa, auxiliando na tomada de decisões financeiras estratégicas.</li>
+            <li>Gestão de pagamentos: Responsabilidade pela recepção, análise, triagem e pagamento de faturas, garantindo o controle das despesas.</li>
+          </ul>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Formação Acadêmica Section -->
+    <section id="formacao" class="card">
+      <h2 class="section-title">Formação Acadêmica</h2>
+
+      <div class="mb-6">
+        <h3 class="subsection-title">UNINTER Centro Universitário Internacional</h3>
+        <!-- Standardized text sizes for education details -->
+        <p class="text-lg font-semibold">Pós-graduação Lato Sensu - Especialização, Pesquisa Clínica</p>
+        <p class="text-gray-600 text-base">agosto de 2024 - agosto de 2025</p>
+      </div>
+
+      <div>
+        <h3 class="subsection-title">Universidade Anhanguera São Paulo</h3>
+        <!-- Standardized text sizes for education details -->
+        <p class="text-lg font-semibold">Bacharelado, Tecnologia em Tecnologia da Informação/Sistemas da Informação</p>
+        <p class="text-gray-600 text-base">janeiro de 2010 - fevereiro de 2014</p>
+      </div>
+    </section>
+
+    <!-- Certificações e Licenças Section -->
+    <section id="certificacoes" class="card">
+      <h2 class="section-title">Certificações e Licenças</h2>
+
+      <h3 class="subsection-title">Pesquisa Clínica e Saúde</h3>
+      <!-- Standardized list item text size and detail text size -->
+      <ul class="list-disc list-inside text-base space-y-2 mb-6">
+        <li><span class="font-semibold">Boas Práticas Clínicas (BPC) - Edição Internacional</span>
+          <p class="text-gray-600 text-sm ml-4">Fiocruz (abr/2024) | Código: 1Ibas</p>
+        </li>
+        <li><span class="font-semibold">Gestão de Dados e REDCap</span>
+          <p class="text-gray-600 text-sm ml-4">Fiocruz (out/2024) | Código: 1D2no</p>
+        </li>
+        <li><span class="font-semibold">Bases da Pesquisa Clínica (Intermediário)</span>
+          <p class="text-gray-600 text-sm ml-4">Hospital Alemão Oswaldo Cruz (out/2024) | Código: 3969649669LM</p>
+          <p class="text-gray-600 text-sm ml-4">Módulo 01: Bases da Pesquisa Clínica, Introdução à Bioética em Pesquisa Clínica, Princípios e Diretrizes das Boas Práticas Clínicas, A Pesquisa no Brasil e no Mundo, Fases da Pesquisa e Principais Desenhos de Estudo, Desenhos de Ensaios Clínicos Randomizados.</p>
+        </li>
+        <li><span class="font-semibold">Aspectos Operacionais I, II e III em Pesquisa Clínica</span>
+          <p class="text-gray-600 text-sm ml-4">UNA-SUS (abr/2024) | Competências: TCLE, CRF, gestão de CROs, submissões regulatórias</p>
+        </li>
+        <li><span class="font-semibold">Introdução à Pesquisa Clínica</span>
+          <p class="text-gray-600 text-sm ml-4">CEPHO (fev/2023)</p>
+        </li>
+        <li><span class="font-semibold">Clinical Research Explained - INFORMED CONSENT</span>
+          <p class="text-gray-600 text-sm ml-4">VIARES (jun/2024)</p>
+          <p class="text-gray-600 text-sm ml-4">Compreensão do consentimento informado como princípio ético fundamental e requisito legal para pesquisa clínica, assegurando que o participante compreenda a pesquisa, seu propósito, procedimentos, riscos e benefícios, e seus direitos.</p>
+        </li>
+        <li><span class="font-semibold">Clinical Research Explained DOUBLE-BLIND STUDY</span>
+          <p class="text-gray-600 text-sm ml-4">VIARES (jun/2024)</p>
+          <p class="text-gray-600 text-sm ml-4">Compreensão do estudo duplo-cego como método crítico para eliminar viés e garantir a validade dos resultados em pesquisa clínica.</p>
+        </li>
+        <li><span class="font-semibold">Clinical Research Explained PATIENT RECRUITMENT</span>
+          <p class="text-gray-600 text-sm ml-4">VIARES (jun/2024)</p>
+          <p class="text-gray-600 text-sm ml-4">Compreensão das fases de ensaios clínicos, processo e estratégias de recrutamento de pacientes, desafios, superação de desafios e considerações éticas.</p>
+        </li>
+        <li><span class="font-semibold">Clinical Research Explained PHASES OF CLINICAL TRIALS</span>
+          <p class="text-gray-600 text-sm ml-4">VIARES (jun/2024)</p>
+          <p class="text-gray-600 text-sm ml-4">Compreensão das fases pré-clínica, Fase I, Fase II, Fase III e Fase IV de ensaios clínicos, incluindo determinação de dosagem, monitoramento de segurança e avaliação de eficácia.</p>
+        </li>
+      </ul>
+
+      <h3 class="subsection-title">Tecnologia e Dados</h3>
+      <ul class="list-disc list-inside text-base space-y-2 mb-6">
+        <li><span class="font-semibold">Fundamentos de Análise de Dados</span>
+          <p class="text-gray-600 text-sm ml-4">Cisco (mai/2024 - mai/2025) | Competências: Data Science, AutoML</p>
+          <p class="text-gray-600 text-sm ml-4">Amplo conhecimento de conceitos básicos de análise de dados, engenharia de dados, ciência de dados e funções de trabalho relacionadas a IA/ML.</p>
+        </li>
+        <li><span class="font-semibold">Imersão em IA (Google/Alura)</span>
+          <p class="text-gray-600 text-sm ml-4">Alura (mai/2024) | Prototipagem com Gemini e IA generativa</p>
+          <p class="text-gray-600 text-sm ml-4">Uso do Gemini com exemplos práticos de IA do Google, criação de prompts profissionais e uso do Google IA Studio.</p>
+        </li>
+      </ul>
+
+      <h3 class="subsection-title">Desenvolvimento Pessoal</h3>
+      <ul class="list-disc list-inside text-base space-y-2 mb-6">
+        <li><span class="font-semibold">Formação em Desenvolvimento Pessoal e Programação</span>
+          <p class="text-gray-600 text-sm ml-4">Alura (jul/2024)</p>
+        </li>
+        <li><span class="font-semibold">Técnicas de Autodesenvolvimento</span>
+          <p class="text-gray-600 text-sm ml-4">Alura (jun/2024)</p>
+          <p class="text-gray-600 text-sm ml-4">Guia completo para turbinar o processo de aprendizado, transformando-o em uma ferramenta poderosa para o crescimento pessoal e profissional.</p>
+        </li>
+        <li><span class="font-semibold">LinkedIn: como fazer o seu perfil trabalhar para você</span>
+          <p class="text-gray-600 text-sm ml-4">Alura (jun/2024) | Código: ae50c24b-8455-4a52-8010-dcf0226fd666</p>
+          <p class="text-gray-600 text-sm ml-4">Criação de perfil profissional que se destaca, conexão com pessoas certas, engajamento e uso do LinkedIn para alcançar objetivos de carreira.</p>
+        </li>
+        <li><span class="font-semibold">Dangerous Goods Training</span>
+          <p class="text-gray-600 text-sm ml-4">Mayo Clinic Laboratories (mai/2024 - expira em mai/2024) | Código: 494986</p>
+          <p class="text-gray-600 text-sm ml-4">Formação para o manuseio/oferta para o transporte de mercadorias perigosas, testado de acordo com 49CFR 172.700/IATA 1.5. Materiais abrangidos pela aula/div 6.2 e 9.</p>
+        </li>
+      </ul>
+
+      <h3 class="subsection-title">Habilidades Técnicas</h3>
+      <ul class="list-disc list-inside text-base space-y-2">
+        <li><span class="font-semibold">Pesquisa Clínica:</span> BPC, TCLE, REDCap, fluxos regulatórios (CEP/CONEP).</li>
+        <li><span class="font-semibold">Gestão:</span> Projetos, contratos, equipes, fornecedores.</li>
+        <li><span class="font-semibold">Tecnologia:</span> Análise de dados, IA básica, sistemas de informação.</li>
+        <li><span class="font-semibold">Idiomas:</span> Português (nativo), Inglês (intermediário).</li>
+      </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="card text-center">
+      <h2 class="section-title">Contato</h2>
+      <!-- Standardized contact text sizes -->
+      <p class="text-lg mb-2">Celular: +5511964110505</p>
+      <p class="text-lg mb-2">Email: leandroms2009@gmail.com</p>
+      <p class="text-lg">LinkedIn: <a href="https://www.linkedin.com/in/leandrocepho" target="_blank" class="apple-link">www.linkedin.com/in/leandrocepho</a></p>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-white py-8 text-center text-gray-500 text-sm">
+    <p>&copy; 06/2025 Leandro Souza. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+
+</html>
